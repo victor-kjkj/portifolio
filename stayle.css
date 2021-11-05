@@ -60,6 +60,17 @@ header{
 
 .banner button{
     font-family: "Mulish", serif;
-    color: black;
-    background-color: purple;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: .0rem .0rem white;
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding-bottom: .6rem;
+    padding-top: .6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    border-radius: 5px;
 }
