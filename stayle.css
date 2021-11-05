@@ -11,13 +11,14 @@ header{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .img-wrapper{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0,0, 0.8) ;
+    background-color: rgba(0, 0,0, 0.5) ;
 }
 
 .img-wrapper img{
@@ -25,4 +26,40 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.8 ;
+}
+
+.banner{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.banner h1{
+    color: white;
+    font-size: 3rem;
+    font-family:"Baloo Da 2",serif;
+    font-weight: 200;
+    text-shadow: .2rem .2rem rgba(0, 0,0, 0.3);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+
+
+}
+
+.banner p {
+    color: white;
+    font-size: 2rem;
+    font-family:"Josefin Slab",serif;
+    font-weight: 500;
+    text-shadow: .2rem .2rem rgba(0, 0,0, 0.3);
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.banner button{
+    font-family: "Mulish", serif;
+    color: black;
+    background-color: purple;
 }
