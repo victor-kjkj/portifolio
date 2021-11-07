@@ -14,6 +14,25 @@ header{
     position: relative;
 }
 
+
+.hamburguer{
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: white;
+    box-shadow:0.1rem 0.1rem black;
+
 .img-wrapper{
     width: 100%;
     height: 100%;
@@ -26,7 +45,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.8 ;
-    animation: zoomdaimagem 10s timing-function delay iteration-count direction fill-mode;
+    animation: zoomdaimagem 20s ;
 }
 
 .banner{
@@ -43,6 +62,8 @@ header{
     text-shadow: .2rem .2rem rgba(0, 0,0, 0.3);
     line-height: 3.5rem;
     margin-bottom: 2rem;
+    animation: movimentacaoBanner 0.5s forwards;
+    opacity: 0;
 
 
 }
@@ -55,6 +76,8 @@ header{
     text-shadow: .2rem .2rem rgba(0, 0,0, 0.3);
     line-height: 3.5rem;
     margin-bottom: 1rem;
+    animation: movimentacaoBanner 0.7s forwards;
+    opacity: 0;
 
 
 }
@@ -74,11 +97,11 @@ header{
     padding-right: 2rem;
     border: none;
     border-radius: 5px;
+    animation: movimentacaoBanner 0.9s forwards;
+    opacity: 0;
+
 }
 
-.banner button:hover{
-    opacity: 0.8;
-}
 
 @keyframes zoomdaimagem {
     0%{
@@ -87,5 +110,23 @@ header{
     100%{
         transform: scale(1);
     }
+}
+
+@keyframes movimentacaoBanner {
+    0%{
+        transform: translateY(10rem);
+        
     }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.banner button:hover{
+    color:#AA076B;
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow:.0rem .0rem #AA076B;
 }
