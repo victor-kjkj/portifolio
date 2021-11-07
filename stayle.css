@@ -26,6 +26,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .line{
@@ -46,7 +47,7 @@ header{
     height: 100%;
     object-fit: cover;
     opacity: 0.8 ;
-    animation: zoomdaimagem 10s timing-function delay iteration-count direction fill-mode;
+    animation: zoomdaimagem 10s ;
 }
 
 .banner{
@@ -63,7 +64,8 @@ header{
     text-shadow: .2rem .2rem rgba(0, 0,0, 0.3);
     line-height: 3.5rem;
     margin-bottom: 2rem;
-
+    opacity: 0;
+    animation: moveBanner .5s forwards;
 
 }
 
@@ -75,6 +77,8 @@ header{
     text-shadow: .2rem .2rem rgba(0, 0,0, 0.3);
     line-height: 3.5rem;
     margin-bottom: 1rem;
+    opacity: 0;
+    animation: moveBanner .75s forwards;
 
 
 }
@@ -94,10 +98,17 @@ header{
     padding-right: 2rem;
     border: none;
     border-radius: 5px;
+    opacity: 0;
+    animation: moveBanner 1s forwards;
 }
 
 .banner button:hover{
-    opacity: 0.8;
+    color: #AA076B;
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-shadow: .0rem .0rem #AA076B;
+
 }
 
 @keyframes zoomdaimagem {
@@ -108,3 +119,16 @@ header{
         transform: scale(1);
     }
     }
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+
+
+    }
+    100%{
+        transform: translateY(0rem) rotateY(0deg);
+        opacity: 1;
+
+    }
+}
