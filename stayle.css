@@ -37,6 +37,11 @@ header{
     cursor: pointer;
 }
 
+.show-numero .hamburguer{
+    right: 16rem;
+    /*modifiqueiaqui*/
+}
+
 
 .line{
      width: 100%;
@@ -151,9 +156,10 @@ header{
     right: -20rem;
 }
 
-.sidebar-ou-barra-lateral.show-menu{
+.show-menu .sidebar-ou-barra-lateral{
     right: 0;
 }
+
 
 .menu {
     position: absolute;
@@ -220,4 +226,4 @@ header{
 
 .fa-twitter:hover{
     color: #61045F;
-}
+}   
