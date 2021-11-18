@@ -16,6 +16,10 @@
     --font-acion: "Mulish", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     width: 100%;
     height: 100vh;
@@ -35,6 +39,7 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    z-index: 200;
 
 }
 
@@ -92,6 +97,7 @@ header{
 
 .show-menu .hamburguer:hover span{
     opacity: 1;
+    
 }
 
 .img-wrapper{
@@ -200,6 +206,7 @@ header{
     top: 0rem;
     right: -20rem;
     transition: all 2s;
+    z-index: 150;
 }
 
 .show-menu .sidebar-ou-barra-lateral{
@@ -560,7 +567,7 @@ header{
     font-size: 1rem;
 }
 
-.field:focus:{
+.field:focus{
     border-bottom: 1px solid;
 }
 .btn-submit{
@@ -666,4 +673,46 @@ header{
     background: linear-gradient(to right, #fffcdc, #d9a7c7);
     color: #61045F;
     text-shadow: 0 0 0 #61045F;
+}
+
+
+footer{
+    width: 100%;
+    height: 3.5rem;
+    background-color: #17181b;
+    color: white;
+    text-shadow: 0 0 0 white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    text-shadow:0 0 0 #a7a7a7;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.social-list a:hover{
+    color: #61045F;
+    text-shadow:0 0 0 #61045F;
+
+}
+
+.social-list ul{
+    display: flex;
 }
