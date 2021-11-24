@@ -716,3 +716,155 @@ footer{
 .social-list ul{
     display: flex;
 }
+
+/*Media queries*/
+
+@media (max-width: 1035px){
+    html{
+    font-size: 75%;
+}
+
+    .sessao-orcamento form{
+        
+        row-gap: 4rem;
+        margin-top: 10rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 770px){
+    html{
+    font-size: 65%;
+    }
+
+    .sidebar-ou-barra-lateral {
+        width: 50%;
+        right: -80rem;
+    }
+
+    .show-menu .hamburguer {
+        right: 40%;
+    }
+    .sessao-orcamento form{
+        
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        row-gap: 7rem;
+
+    }
+}
+
+@media (max-width: 630px){
+    html{
+    font-size: 60%;
+}
+
+    .sidebar-ou-barra-lateral {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        position: fixed;
+        top: 0rem;
+        right: -150rem;
+        transition: all 2s;
+        z-index: 150;
+    }
+
+    .menu-link {
+
+        font-size: 3rem;
+        
+    }
+
+    .show-menu .hamburguer {
+        right: 90%;
+    }
+
+    .conhecimentos {
+        display: contents;
+        row-gap: 4rem;
+        font-size: 1.5rem;
+        margin: 8rem;
+    }
+
+    .conhecimento-header {
+
+        font-size: 1.5rem;
+        margin-left: 8rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .conhecimento-text p {
+       
+        margin-top: 1rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .sessao-orcamento form{
+        
+        margin-top: 7rem;
+        margin-bottom: 10rem;
+        row-gap: 9rem;
+
+    }
+}
+
+@media (max-width: 540px){
+    html{
+    font-size: 55%;
+    }
+
+
+
+    .sessao-header h1 {
+        margin-top: 1.5rem;
+    
+    }
+
+    .projetos{
+        display: flow-root;
+
+    }
+
+    .card{
+        justify-content: center;
+        align-items: center;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 2.5%;
+        margin-bottom: 2%;
+    }
+
+    
+    .sessao-orcamento form{
+        
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        row-gap: 10rem;
+
+    }
+
+}
+
+@media (max-width: 360px){
+    .orcamento-wrapper {
+        width: 90%;
+    }
+
+    .footer-content p {
+
+        font-size: 1rem;
+
+    }
+
+
+    
+    footer {
+
+        height: 5rem;
+    }
+
+}
