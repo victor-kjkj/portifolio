@@ -755,6 +755,46 @@ footer{
     }
 }
 
+@media (max-width: 760px){
+
+
+.conhecimentos {
+    display: contents;
+    row-gap: 4rem;
+    font-size: 1.5rem;
+    margin: 8rem;
+}
+
+.conhecimento-header {
+
+    font-size: 1.5rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.projetos{
+    display: flow-root;
+
+}
+
+.card{
+    justify-content: center;
+    align-items: center;
+    margin-left: 37.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+
+.conhecimento-text p {
+   
+    margin-top: 1rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+}
+
 @media (max-width: 630px){
     html{
     font-size: 60%;
@@ -781,27 +821,7 @@ footer{
         right: 90%;
     }
 
-    .conhecimentos {
-        display: contents;
-        row-gap: 4rem;
-        font-size: 1.5rem;
-        margin: 8rem;
-    }
-
-    .conhecimento-header {
-
-        font-size: 1.5rem;
-        margin-left: 8rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .conhecimento-text p {
-       
-        margin-top: 1rem;
-        margin-left: 8rem;
-        margin-right: 8rem;
-    }
+    
 
     .sessao-orcamento form{
         
@@ -824,10 +844,7 @@ footer{
     
     }
 
-    .projetos{
-        display: flow-root;
 
-    }
 
     .card{
         justify-content: center;
@@ -845,6 +862,10 @@ footer{
         margin-bottom: 7rem;
         row-gap: 10rem;
 
+    }
+
+    .orcamento-wrapper {
+        width: 80%;
     }
 
 }
